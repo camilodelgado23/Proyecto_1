@@ -1,14 +1,21 @@
 import psycopg2
+import sys
+import os
+
+#Agregamos la ruta a la raíz del proyecto al sys.path para facilitar importaciones 
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
+from credentials import DB_USER, DB_PASSWORD, DB_HOST, DB_PORT, DB_NAME
 
 def create_connection():
     """Crea una conexión a la base de datos PostgreSQL."""
     try:
         connection = psycopg2.connect(
-            user="postgres",
-            password="root",
-            host="localhost",
-            port="5432",
-            database="proyecto1"
+            user=DB_USER,
+            password=DB_PASSWORD,
+            host=DB_HOST,
+            port=DB_PORT,
+            database=DB_NAME
         )
         print("Conexión exitosa a la base de datos PostgreSQL.")
         return connection
