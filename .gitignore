@@ -5,3 +5,5 @@ credentials.py
 
 __pycache__/
 
+csv/flights_limpio.csv
+csv/train.csv

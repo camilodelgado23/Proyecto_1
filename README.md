@@ -1,17 +1,18 @@
-# proyecto 1 :airplane:
+# Proyecto: DELAYED FLIGHTS :airplane:
 
-## Por:  - Camilo Jose Delgado Bolaños 
-##       -  Jose Daniel Carrera 
-##       - Jhon Sebastian arias soto 
+Por:  
+- Camilo Jose Delgado Bolaños 
+-  Jose Daniel Carrera 
+- John Sebastian arias soto 
 
 
-#### Contexto :page_facing_up:
+## Contexto :page_facing_up:
 
 Este Dataset fue extraido de la pagina web kaggle una plataforma de competencia de ciencia de datos y una comunidad en línea para científicos de datos y profesionales del aprendizaje automático de Google LLC.
 
-Este Dataset contiene informacion sobre vuelos retrasados en el año 2019 con informacion sobre el clima, aereopuerto entre otros, para un mayor detalle puede visitar la pagina de donde salio en el siguiente enlace: https://www.kaggle.com/datasets/threnjen2019-airline-delays-and-cancellations?select=train.csv
+Este Dataset contiene informacion sobre vuelos retrasados en el año 2019 con informacion sobre el clima, aereopuerto entre otros, para un mayor detalle puede visitar la pagina de donde se extrajo el dataset en el siguiente enlace: https://www.kaggle.com/datasets/threnjen2019-airline-delays-and-cancellations?select=train.csv
 
-#### Descripcion de columnas Dataset :clipboard:
+## Descripcion de columnas Dataset :clipboard:
 
 1. **Información Temporal:**
 
@@ -48,7 +49,7 @@ Este Dataset contiene informacion sobre vuelos retrasados en el año 2019 con in
 - **awnd:** Velocidad máxima del viento del día
 
 
-#### Herramientas Usadas :computer:
+## Herramientas Usadas :computer:
 
 - **Python**: 
   - **Python Scripting**: Para automatizar tareas como la inserción de datos en bases de datos, y la exportación de archivos. Visual Studio Code (VS Code): Como entorno para escribir y ejecutar código Python.
@@ -69,7 +70,7 @@ Este Dataset contiene informacion sobre vuelos retrasados en el año 2019 con in
 
 - **Power BI:** Para la visualizacion de Datos
 
-#### Estructura del Repositorio :card_index:
+## Estructura del Repositorio :card_index:
 La estructura del repositorio es la siguiente
 
 - **Database:**  Carpeta en donde se encuentran loa archivos relacionados con las acciones que interactúan directamente con la Base de Datos en postgreSQL
@@ -90,9 +91,9 @@ La estructura del repositorio es la siguiente
 - **Dashboard_flights_delayed.pdf:** Archivo pdf en donde3 se encuentran las vizualisaciones finales  en PowerBI 
 
 
-#### Instrucciones para la ejecucion: :pencil:
+## Instrucciones para la ejecucion: :pencil:
 
-##### Requerimientos :point_left:
+### Requerimientos :point_left:
 - Python: https://www.python.org/downloads/
 - PostgreSQL: https://www.postgresql.org/
 - PowerBI: https://www.microsoft.com/es-es/download/details.aspx?id=58494
@@ -144,14 +145,14 @@ Creamos el archivo credentials.py donde almacenaremos las credenciales para cone
 ```
 Podemos probar si las credenciales son correctas ejecutando nuestro archivo conexion.py.
 
-#### Para una correcta ejecucion del proyecto lo podemos ejecutar en el siguiente orden: :file_folder:
+### Para una correcta ejecucion del proyecto lo podemos ejecutar en el siguiente orden: :file_folder:
 
 - Primero ejecutamos el notebook tablas_dataset (Para crear las tablas en la Base de Datos)
 - Luego ejecutamos el notebook carga_datasets (Para insertar los datasets en las tablas)
 - Finalmente podemos ejecutar el notebook flights_EDA (En donde realizamos un E.D.A al dataset original y exportamos el dataset limpio) 
 - y el notebook flights_trtansformado_EDA (En donde realizamos un E.D.A al dataset ya limpio para realizar un analisis mas a fondo de los datos)
 
-#### Para conectarnos a PowerBI :bar_chart:
+### Para conectarnos a PowerBI :bar_chart:
 
 Nos vamos a PowerBI y lo iniciamos, nos vamos a la pantalla de inicio y le damos a obtener datos donde buscaremos la opción de Base de datos PostgreSQL
 
